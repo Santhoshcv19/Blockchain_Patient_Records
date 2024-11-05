@@ -17,8 +17,7 @@ Before running this project, ensure you have the following installed:
 ## Installation Steps
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [<repository-url>](https://github.com/Santhoshcv19/Blockchain_Patient_Records.git)
    ```
 
 2. **Install Dependencies**:
