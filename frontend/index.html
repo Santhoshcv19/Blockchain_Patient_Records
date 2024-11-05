@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Health Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Patient Health Records</h1>
+    <form id="recordForm">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="publicRecord">Public Health Information:</label>
+        <textarea id="publicRecord" name="publicRecord" required></textarea>
+
+        <label for="privateRecord">Private Health Information (Sensitive):</label>
+        <textarea id="privateRecord" name="privateRecord" required></textarea>
+
+        <input type="submit" value="Submit Record">
+    </form>
+
+    <p id="status"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
